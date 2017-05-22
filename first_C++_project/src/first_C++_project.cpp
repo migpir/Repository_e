@@ -8,6 +8,7 @@
 //             : 1.0 print "Hello World" to standard output
 //             : 1.1 remove std:: by adding namespace
 //             : 1.2 Define and initialize 6 data types and output to screen
+//             : 1.3 Use the switch statement
 //============================================================================
 
 #include <iostream>
@@ -17,19 +18,30 @@ using namespace std;
 
 int main() {
 
-	const double PI = 3.1428576;
-	int myAge = 39;
-	char myGrade = 'A';
-	bool isHappy = true;
-	float Num = 2.1418281828459045;
-	double  favnum = 3.245678;
+	int key = 0;
 
-	cout<<"PI is equal to "<<PI<<endl;
-	cout<<"myAge is  "<<myAge<<endl;
-	cout<<"myGrade is equal to "<<myGrade<<endl;
-	cout<<"Am I happy? "<<isHappy<<endl;
-	cout<<"Num is equal to "<<Num<<endl;
-	cout<<"favnum is equal to "<<favnum<<endl;
+switch (key) {
+	case 1:
+		cout<<" key = 1"<<endl;
+
+		break;
+	case 2:
+		cout<<" key = 2"<<endl;
+
+		break;
+	case 3:
+		cout<<" key = 3"<<endl;
+
+		break;
+	case 4:
+		cout<<" key = 4"<<endl;
+
+		break;
+
+	default:
+		cout<<"No choices selected" << endl;
+		break;
+}
 
 	return 0;
 }
